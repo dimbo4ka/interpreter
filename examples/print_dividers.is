@@ -1,0 +1,15 @@
+println("Enter a number: ")
+n = parse_num(read())
+d = 2
+while d * d <= n then
+    if n % d == 0 then
+        println(d)
+    end if
+    while n % d == 0 then
+        n /= d
+    end while
+    d += 1
+end while
+if n > 1 then
+    println(n)
+end if

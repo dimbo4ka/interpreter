@@ -1,0 +1,9 @@
+println("Enter a string: ")
+s = read()
+println("Enter a substring: ")
+substr = read()
+answer = "No"
+if replace(s, substr, "") != s then
+    answer = "Yes"
+end if
+println(answer)

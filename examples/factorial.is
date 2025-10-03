@@ -1,0 +1,14 @@
+temp = 1
+CalculateFactorial = function(n)
+    if n > 0 then
+        temp *= n
+        CalculateFactorial(n - 1)
+    end if
+end function
+
+println("Enter number: ")
+n = parse_num(read())
+CalculateFactorial(n)
+
+println("Factorial: ")
+println(temp)
